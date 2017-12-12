@@ -1,4 +1,4 @@
-# Elasticsearch backups to S3
+# Elasticsearch Snapshots backup to S3
 
 **Purpose** ES only keeps 14 days of automated snapshots. To archive more than this requires taking manual snapshots; see `http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-managedomains-snapshots.html`
 

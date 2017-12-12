@@ -7,7 +7,6 @@ import requests
 import json
 import os
 import boto3
-from elasticsearch import Elasticsearch, RequestsHttpConnection
 from requests_aws4auth import AWS4Auth
 
 # Use with a CloudWatch Rule to schedule backups to a S3 bucket
