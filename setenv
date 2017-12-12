@@ -1,0 +1,7 @@
+# You need to set the following environment variables in your shell
+export ESENDPOINT="search-my-es-endpoint.eu-west-1.es.amazonaws.com"
+export AWSKEY="my-aws-key"                # With relevant permissions
+export AWSSECRET="my-aws-secret"
+export BUCKETNAME="my-s3-bucket"          # Bucket must already exist
+export AWSACCOUNTID="my-aws-accountid"    # 12 digit aws accountid that the ES domain belongs to.
+export PROFILE="my-aws-profile"           # Local aws profile with relevant permissions
