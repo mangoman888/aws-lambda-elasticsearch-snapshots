@@ -46,6 +46,13 @@ if aws lambda get-function --function-name es-snapshots-lambda --profile ${PROFI
       --profile ${PROFILE} \
       --function-name es-snapshots-lambda \
       --zip-file fileb://es-snapshots-lambda.zip
+
+  echo -e "\nupdate environment variables with any changes\n"
+  aws lambda update-function-configuration \
+      --profile ${PROFILE} \
+      --function-name es-snapshots-lambda \
+      --environment "Variables={es_endpoint=$ESENDPOINT,es_bucket=$BUCKETNAME}"
+
 else
   # Lambda deployment
   echo -e "\nCreating es-snapshots-lambda function\n"
